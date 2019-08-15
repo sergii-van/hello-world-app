@@ -1,7 +1,7 @@
 ﻿using System;
 using HelloWorld.Common.Interfaces;
-using HelloWorld.Core.Helpers;
-using HelloWorld.Core.Services;
+using HelloWorld.Core.Console.Helpers;
+using HelloWorld.Core.Console.Services;
 using NSubstitute;
 using Xunit;
 

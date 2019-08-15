@@ -9,10 +9,7 @@ namespace HelloWorld.App
         {
             var serviceProvider = ContainerConfig.Configure();
 
-            var factory = serviceProvider.GetService<IHelloWorldFactory>();
-            var settings = serviceProvider.GetService<ISettingsService>();
-
-            var provider = factory.GetProvider(settings.Provider);
+            var provider = serviceProvider.GetService<IHelloWorldProvider>();
 
             provider.WriteHelloWorld();
         }

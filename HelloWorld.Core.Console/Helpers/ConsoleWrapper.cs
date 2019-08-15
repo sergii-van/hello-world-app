@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HelloWorld.Core.Helpers
+namespace HelloWorld.Core.Console.Helpers
 {
     public static class ConsoleWrapper
     {
@@ -13,7 +13,7 @@ namespace HelloWorld.Core.Helpers
 
         public static void ResetDelegates()
         {
-            ConsoleWrapper.WriteLineDelegate = Console.WriteLine;
+            ConsoleWrapper.WriteLineDelegate = System.Console.WriteLine;
         }
 
         public static void WriteLine(string message) => WriteLineDelegate(message);

@@ -1,7 +1,7 @@
 ﻿using HelloWorld.Common.Interfaces;
-using HelloWorld.Core.Helpers;
+using HelloWorld.Core.Console.Helpers;
 
-namespace HelloWorld.Core.Services
+namespace HelloWorld.Core.Console.Services
 {
     public class ConsoleProvider : IHelloWorldProvider
     {
